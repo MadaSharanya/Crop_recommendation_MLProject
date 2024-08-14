@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop_Recommendation</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/first.css')}}">
+</head>
+<body>
+    <form action="form" method="post">
+  <label for="Nitrogen">Nitrogen:</label>
+  <input type="number" id="Nitrogen" name="Nitrogen" min="0" max="140" step="0.01" placeholder="Nitrogen    (0-140)" required>
+
+  <label for="Phosphorus">Phosphorus:</label>
+  <input type="number" id="Phosphorus" name="Phosphorus" min="5" max="150" step="0.01" placeholder="Phosphorus    (5-150)" required>
+
+  <label for="Potassium">Potassium:</label>
+  <input type="number" id="Potassium" name="Potassium" min="5" max="200" step="0.01" placeholder="Potassium   (5-200)" required>
+
+  <label for="Temperature">Temperature:</label>
+  <input type="number" id="Temperature" name="Temperature" min="5" max="50" step="0.01" placeholder="Temperature in Degree Celcius    (5-50)" required>
+
+  <label for="Humidity">Humidity:</label>
+  <input type="number" id="Humidity" name="Humidity" min="10" max="100" step="0.01" placeholder="Relative Humidity in Percentage    (10-100)" required>
+
+  <label for="ph">pH:</label>
+  <input type="number" id="ph" name="ph" min="0" max="10" step="0.01" placeholder="ph should be in between 0-14   (0-10)" required>
+
+  <label for="Rainfall">Rainfall:</label>
+  <input type="number" id="Rainfall" name="Rainfall" placeholder="Rainfall in MM    (20-300)" required min="20" max="300" step="0.01">
+
+  <input type="submit" id="submit" name="submit" value="Predict Your Crop">
+</form>
+
+</body>
+</html>
